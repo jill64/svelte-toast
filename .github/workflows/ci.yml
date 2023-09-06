@@ -4,6 +4,16 @@ on:
   push:
     branches:
       - dev
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
 
 jobs:
   ci:
@@ -13,6 +23,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: pnpm
       - uses: pnpm/action-setup@v2
         with:
           version: latest
@@ -20,3 +31,9 @@ jobs:
       - run: pnpm lint
       - run: pnpm check
       - run: pnpm build
+      - uses: actions/configure-pages@v3
+      - uses: actions/upload-pages-artifact@v2
+        with:
+          path: '/build'
+      - uses: actions/deploy-pages@v2
+        id: deployment
