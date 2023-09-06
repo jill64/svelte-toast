@@ -1,5 +1,7 @@
 # svelte-toast
 
+[![npm version](https://badge.fury.io/js/@jill64%2Fsvelte-toast.svg)](https://badge.fury.io/js/@jill64%2Fsvelte-toast)
+
 My quick setup for [svelte-french-toast](https://github.com/kbrgl/svelte-french-toast).
 
 - Color palette makes theme setting quick and simple

@@ -1,4 +1,3 @@
-import { DEV } from 'esm-env'
 import adapter from '@sveltejs/adapter-static'
 import { vitePreprocess } from '@sveltejs/kit/vite'
 
@@ -10,7 +9,7 @@ const config = {
       fallback: 'index.html'
     }),
     paths: {
-      base: DEV ? '' : '/svelte-toast'
+      base: '/svelte-toast'
     }
   }
 }
