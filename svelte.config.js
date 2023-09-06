@@ -10,7 +10,7 @@ const config = {
       fallback: 'index.html'
     }),
     paths: {
-      base: DEV ? '' : process.env.BASE_PATH
+      base: DEV ? '' : '/svelte-toast'
     }
   }
 }
