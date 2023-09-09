@@ -1,6 +1,6 @@
 # svelte-toast
 
-[![npm version](https://badge.fury.io/js/@jill64%2Fsvelte-toast.svg)](https://badge.fury.io/js/@jill64%2Fsvelte-toast)
+[Demo](https://jill64.github.io/svelte-toast)
 
 My quick setup for [svelte-french-toast](https://github.com/kbrgl/svelte-french-toast).
 
