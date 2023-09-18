@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/svelte-device-theme':
-    specifier: ^0.1.0
-    version: 0.1.0(svelte@4.2.0)
+    specifier: ^1.0.0
+    version: 1.0.0(svelte@4.2.0)
   svelte:
     specifier: ^4.2.0
     version: 4.2.0
@@ -331,8 +331,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@jill64/svelte-device-theme@0.1.0(svelte@4.2.0):
-    resolution: {integrity: sha512-EJ0clKWKrQPfFMHf9JaWul3lNNzqSq4xi5PnLyX5CxYf4Ea8RAHpXpxvGjjcU/48z9mfNnRQk6u/uzjHAT1tCg==}
+  /@jill64/svelte-device-theme@1.0.0(svelte@4.2.0):
+    resolution: {integrity: sha512-YmRwyU05Q8CHHIp3kfcGomZe96vdvyzVaDQj5ICuoyPnIBbSfK/nWJ2xBuqBrg/vtO/TZlLaHiTD8hHtjgpcxA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
