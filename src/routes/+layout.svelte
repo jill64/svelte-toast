@@ -3,6 +3,7 @@
 </script>
 
 <Toaster />
+<h1>svelte-toast</h1>
 <slot />
 
 <style>

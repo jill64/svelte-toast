@@ -2,18 +2,29 @@
   import { toast } from '$lib/toast.js'
 </script>
 
-<h1>svelte-toast</h1>
-<button on:click={() => $toast.success('Success')}> Success </button>
-<button on:click={() => $toast.error('Error')}>Error</button>
+<button on:click={() => $toast.success('Success Response')}>
+  Success Action
+</button>
+<button on:click={() => $toast.error('Error Response')}>Error Action</button>
 <button
   on:click={() =>
     $toast.promise(new Promise((_) => setTimeout(_, 2000)), {
-      success: 'Success',
-      error: 'Error',
+      success: 'Resolved',
+      error: 'Rejected',
       loading: 'Loading'
     })}
 >
-  Promise
+  Resolve Action
+</button>
+<button
+  on:click={() =>
+    $toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
+      success: 'Resolved',
+      error: 'Rejected',
+      loading: 'Loading'
+    })}
+>
+  Reject Action
 </button>
 
 <style>

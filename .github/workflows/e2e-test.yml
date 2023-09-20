@@ -1,11 +1,12 @@
-name: Publish
+name: E2E Test
 
 on:
-  release:
-    types: [published]
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  publish:
+  e2e-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -15,18 +16,15 @@ jobs:
         uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
         with:
           node-version: 18
-          registry-url: https://registry.npmjs.org/
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@d882d12c64e032187b2edb46d3a0d003b7a43598 # v2.4.0
         with:
           version: latest
           run_install: true
 
-      - name: Build
-        run: pnpm build
+      - name: Install Playwright
+        run: pnpx playwright install
 
-      - name: Publish
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Test
+        run: pnpm test
