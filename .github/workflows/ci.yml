@@ -7,10 +7,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: 'pages'
-  cancel-in-progress: false
-
 jobs:
   lint:
     uses: jill64/reusable-workflow/.github/workflows/lint.yml@main
