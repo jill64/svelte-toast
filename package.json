@@ -42,7 +42,7 @@
     "svelte": "^4.0.0"
   },
   "devDependencies": {
-    "@playwright/test": "1.38.0",
+    "@playwright/test": "1.38.1",
     "@sveltejs/adapter-static": "2.0.3",
     "@sveltejs/kit": "1.25.0",
     "@sveltejs/package": "2.2.2",
