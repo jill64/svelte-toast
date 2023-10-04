@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-toast",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "My quick setup for svelte-french-toast",
   "type": "module",
   "main": "dist/index.js",
@@ -50,7 +50,7 @@
     "@typescript-eslint/parser": "6.7.4",
     "eslint": "8.50.0",
     "eslint-config-prettier": "9.0.0",
-    "eslint-plugin-svelte": "2.33.2",
+    "eslint-plugin-svelte": "2.34.0",
     "prettier": "3.0.3",
     "prettier-plugin-svelte": "3.0.3",
     "publint": "0.2.3",
