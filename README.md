@@ -1,5 +1,7 @@
 # svelte-toast
 
+[![CI](https://github.com/jill64/svelte-toast/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-toast/actions/workflows/ci.yml)
+
 [Demo](https://jill64.github.io/svelte-toast)
 
 My quick setup for [svelte-french-toast](https://github.com/kbrgl/svelte-french-toast).
