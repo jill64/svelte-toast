@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-toast",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "My quick setup for svelte-french-toast",
   "type": "module",
   "main": "dist/index.js",
