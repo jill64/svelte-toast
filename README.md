@@ -1,6 +1,7 @@
 # svelte-toast
 
-[![CI](https://github.com/jill64/svelte-toast/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-toast/actions/workflows/ci.yml)
+[![Deploy](https://github.com/jill64/svelte-toast/actions/workflows/deploy.yml/badge.svg)](https://github.com/jill64/svelte-toast/actions/workflows/deploy.yml)
+[![Integration](https://github.com/jill64/svelte-toast/actions/workflows/integration.yml/badge.svg)](https://github.com/jill64/svelte-toast/actions/workflows/integration.yml)
 
 [Demo](https://jill64.github.io/svelte-toast)
 
