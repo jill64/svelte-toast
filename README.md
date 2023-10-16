@@ -1,7 +1,7 @@
 # svelte-toast
 
+[![npm](https://img.shields.io/npm/v/%40jill64%2Fsvelte-toast)](https://npmjs.com/package/@jill64/svelte-toast)
 [![Deploy](https://github.com/jill64/svelte-toast/actions/workflows/deploy.yml/badge.svg)](https://github.com/jill64/svelte-toast/actions/workflows/deploy.yml)
-[![Integration](https://github.com/jill64/svelte-toast/actions/workflows/integration.yml/badge.svg)](https://github.com/jill64/svelte-toast/actions/workflows/integration.yml)
 
 [Demo](https://jill64.github.io/svelte-toast)
 
