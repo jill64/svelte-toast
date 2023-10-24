@@ -9,6 +9,7 @@ My quick setup for svelte-french-toast
 <!----- END GHOST DOCS HEADER ----->
 
 [svelte-french-toast](https://github.com/kbrgl/svelte-french-toast).
+
 [Demo](https://jill64.github.io/svelte-toast)
 
 - Color palette makes theme setting quick and simple
