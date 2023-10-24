@@ -1,11 +1,8 @@
-# svelte-toast
+<!----- BEGIN GHOST DOCS HEADER ----->
+<!----- END GHOST DOCS HEADER ----->
 
-[![npm](https://img.shields.io/npm/v/%40jill64%2Fsvelte-toast)](https://npmjs.com/package/@jill64/svelte-toast)
-[![Deploy](https://github.com/jill64/svelte-toast/actions/workflows/deploy.yml/badge.svg)](https://github.com/jill64/svelte-toast/actions/workflows/deploy.yml)
-
+[svelte-french-toast](https://github.com/kbrgl/svelte-french-toast).
 [Demo](https://jill64.github.io/svelte-toast)
-
-My quick setup for [svelte-french-toast](https://github.com/kbrgl/svelte-french-toast).
 
 - Color palette makes theme setting quick and simple
 - Applies device dark theme by default
@@ -19,7 +16,7 @@ npm i @jill64/svelte-toast
 
 ## Usage
 
-```svelte
+```svelte:+layout.svelte
 <!-- +layout.svelte -->
 <script>
   import { Toaster } from '@jill64/svelte-toast'
@@ -41,7 +38,7 @@ npm i @jill64/svelte-toast
 <!-- ... -->
 ```
 
-```svelte
+```svelte:+page.svelte
 <!-- +page.svelte -->
 <script>
   import { toast } from '@jill64/svelte-toast'
@@ -54,7 +51,7 @@ npm i @jill64/svelte-toast
     // Optional Toast Config
   })
 
-  const onPromise = () => () =>
+  const onPromise = () => 
     $toast.promise(
       // Your Promise
       ,
