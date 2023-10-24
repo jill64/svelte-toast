@@ -6,6 +6,7 @@ export default defineConfig({
     port: 4173
   },
   testDir: 'tests',
+  retries: process.env.CI ? 2 : 0,
   fullyParallel: true,
   workers: '100%',
   projects: [
