@@ -12,6 +12,9 @@
     "dist"
   ],
   "keywords": [
+    "svelte",
+    "toast",
+    "pre-styled",
     "notify"
   ],
   "exports": {
