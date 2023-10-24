@@ -58,7 +58,7 @@ npm i @jill64/svelte-toast
     // Optional Toast Config
   })
 
-  const onPromise = () => 
+  const onPromise = () =>
     $toast.promise(
       // Your Promise
       ,
