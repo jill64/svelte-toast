@@ -33,7 +33,7 @@
   },
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && npm run package",
     "test": "playwright test",
     "preview": "npm run build && vite preview",
     "prepack": "npm run build",
