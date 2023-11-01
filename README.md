@@ -8,13 +8,13 @@
 
 <!----- END GHOST DOCS HEADER ----->
 
-[svelte-french-toast](https://github.com/kbrgl/svelte-french-toast).
-
-[Demo](https://jill64.github.io/svelte-toast)
+[svelte-french-toast](https://github.com/kbrgl/svelte-french-toast)
 
 - Color palette makes theme setting quick and simple
 - Applies device dark theme by default
 - Most of the original methods are available
+
+## [Demo + Example (StackBlitz)](https://stackblitz.com/edit/jill64-svelte-toast?file=src%2Froutes%2FDemo.svelte)
 
 ## Install
 
