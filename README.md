@@ -22,14 +22,6 @@ npm i @jill64/svelte-toast
 - Applies device dark theme by default
 - Most of the original methods are available
 
-## [Demo + Example (StackBlitz)](https://stackblitz.com/edit/jill64-svelte-toast?file=src%2Froutes%2FDemo.svelte)
-
-## Install
-
-```sh
-npm i @jill64/svelte-toast
-```
-
 ## Usage
 
 ```svelte:+layout.svelte
