@@ -9,13 +9,14 @@
   "bugs": "https://github.com/jill64/svelte-toast/issues",
   "homepage": "https://github.com/jill64/svelte-toast#readme",
   "files": [
-    "dist"
+    "dist",
+    "!*.test.*",
+    "!*.spec.*"
   ],
   "keywords": [
+    "notify",
     "svelte",
-    "toast",
-    "pre-styled",
-    "notify"
+    "toast"
   ],
   "exports": {
     ".": {
