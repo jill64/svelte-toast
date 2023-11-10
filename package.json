@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-toast",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "🍞 My quick setup for svelte-french-toast",
   "type": "module",
   "main": "dist/index.js",
@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@jill64/svelte-device-theme": "1.2.0",
-    "svelte": "4.2.2",
+    "svelte": "4.2.3",
     "svelte-french-toast": "1.2.0"
   }
 }
