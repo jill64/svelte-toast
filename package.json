@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@jill64/svelte-device-theme": "1.2.0",
-    "svelte": "4.2.2",
+    "svelte": "4.2.3",
     "svelte-french-toast": "1.2.0"
   }
 }
