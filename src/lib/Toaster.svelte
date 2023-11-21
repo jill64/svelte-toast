@@ -2,20 +2,25 @@
   import { isDark } from '@jill64/svelte-device-theme'
   import type { ToastOptions, ToastPosition } from 'svelte-french-toast'
   import { Toaster } from 'svelte-french-toast'
+  import { listen } from 'svelte-mq-store'
   import { lightPalette } from './lightPalette.js'
-  import { palette as paletteStore } from './palette.js'
+  import { palette as store } from './palette.js'
   import type { Palette } from './types/Palette.js'
 
   export let reverseOrder: boolean | undefined = undefined
   export let position: ToastPosition = 'bottom-left'
+  export let mobilePosition: ToastPosition | undefined = 'top-center'
   export let toastOptions: ToastOptions | undefined = undefined
   export let gutter: number | undefined = undefined
   export let containerStyle: string | undefined = undefined
   export let containerClassName: string | undefined = undefined
   export let palette: Partial<Palette> | undefined = undefined
   export let dark: boolean | undefined = undefined
+  export let mobileQuery = '(max-width: 640px)'
 
-  $: $paletteStore =
+  $: isMobile = listen(mobileQuery)
+
+  $: $store =
     dark ?? $isDark
       ? {
           background: '#222',
@@ -23,7 +28,8 @@
           success: 'darkgreen',
           error: 'darkred',
           secondary: 'gainsboro',
-          loading: '#555',
+          loading: '#888',
+          loading_secondary: '#555',
           ...palette
         }
       : {
@@ -33,7 +39,7 @@
 </script>
 
 <Toaster
-  {position}
+  position={$isMobile ? mobilePosition : position}
   {reverseOrder}
   {toastOptions}
   {gutter}

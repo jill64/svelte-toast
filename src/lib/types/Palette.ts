@@ -4,5 +4,6 @@ export type Palette = {
   success: string
   error: string
   loading: string
+  loading_secondary: string
   secondary: string
 }
