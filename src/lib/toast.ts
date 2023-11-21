@@ -20,10 +20,10 @@ export const toast = derived(palette, ($palette) => {
   }
 
   const loadingsStyle = {
-    style: baseStyle($palette.loading),
+    style: baseStyle($palette.loading_secondary),
     iconTheme: {
       primary: $palette.loading,
-      secondary
+      secondary: $palette.loading_secondary
     }
   }
 

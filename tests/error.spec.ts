@@ -5,5 +5,5 @@ test('error', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Error Action' }).click()
 
-  await expect(page.getByText('Error Response')).toBeVisible()
+  await expect(page.getByRole('alert')).toHaveText('Error Response')
 })

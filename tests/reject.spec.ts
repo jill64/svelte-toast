@@ -5,7 +5,6 @@ test('reject', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Reject Action' }).click()
 
-  await expect(page.getByText('Loading')).toBeVisible()
-
-  await expect(page.getByText('Rejected')).toBeVisible()
+  await expect(page.getByRole('alert')).toHaveText('Loading')
+  await expect(page.getByRole('alert')).toHaveText('Rejected')
 })
