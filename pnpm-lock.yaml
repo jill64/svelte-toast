@@ -8,6 +8,9 @@ dependencies:
   svelte-french-toast:
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.7)
+  svelte-mq-store:
+    specifier: ^0.0.1
+    version: 0.0.1(svelte@4.2.7)
 
 devDependencies:
   '@jill64/sentry-sveltekit-cloudflare':
@@ -1371,7 +1374,6 @@ packages:
 
   /esm-env@1.0.0:
     resolution: {integrity: sha512-Cf6VksWPsTuW01vU9Mk/3vRue91Zevka5SjyNf3nEpokFRuqt/KjUQoGAwq9qMmhpLTHmXzSIrFRw8zxWzmFBA==}
-    dev: true
 
   /espree@9.6.1:
     resolution: {integrity: sha512-oruZaFkjorTpF32kDSI5/75ViwGeZginGGy2NoOSg3Q9bnwlnmDm4HLnkl0RE3n+njDXR037aY1+x58Z/zFdwQ==}
@@ -2092,6 +2094,15 @@ packages:
     dependencies:
       svelte: 4.2.7
     dev: true
+
+  /svelte-mq-store@0.0.1(svelte@4.2.7):
+    resolution: {integrity: sha512-HHO2tfnbohrkz1Ua46sa076CZeafldE5JWJMz550f+vrc1VGk0X/ud7HmPmi93SHig7z3NiKBOom7F1c8Aqeeg==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      esm-env: 1.0.0
+      svelte: 4.2.7
+    dev: false
 
   /svelte-writable-derived@3.1.0(svelte@4.2.7):
     resolution: {integrity: sha512-cTvaVFNIJ036vSDIyPxJYivKC7ZLtcFOPm1Iq6qWBDo1fOHzfk6ZSbwaKrxhjgy52Rbl5IHzRcWgos6Zqn9/rg==}
