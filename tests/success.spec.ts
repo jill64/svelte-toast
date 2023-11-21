@@ -5,5 +5,5 @@ test('success', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Success Action' }).click()
 
-  await expect(page.getByText('Success Response')).toBeVisible()
+  await expect(page.getByRole('alert')).toHaveText('Success Response')
 })

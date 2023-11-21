@@ -5,7 +5,6 @@ test('resolve', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Resolve Action' }).click()
 
-  await expect(page.getByText('Loading')).toBeVisible()
-
-  await expect(page.getByText('Resolved')).toBeVisible()
+  await expect(page.getByRole('alert')).toHaveText('Loading')
+  await expect(page.getByRole('alert')).toHaveText('Resolved')
 })
