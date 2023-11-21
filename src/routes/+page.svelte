@@ -1,35 +1,62 @@
 <script lang="ts">
   import { toast } from '$lib/toast.js'
-  import { HighlightAuto } from 'svelte-highlight'
+  import { Highlight } from 'svelte-highlight'
+  import js from 'svelte-highlight/languages/javascript'
+  import { code } from './code'
+
+  let state: keyof typeof code = ''
 </script>
 
-<HighlightAuto code="" />
-<button on:click={() => $toast.success('Success Response')}>
-  Success Action
-</button>
-<button on:click={() => $toast.error('Error Response')}>Error Action</button>
-<button
-  on:click={() =>
-    $toast.promise(new Promise((_) => setTimeout(_, 2000)), {
-      success: 'Resolved',
-      error: 'Rejected',
-      loading: 'Loading'
-    })}
->
-  Resolve Action
-</button>
-<button
-  on:click={() =>
-    $toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
-      success: 'Resolved',
-      error: 'Rejected',
-      loading: 'Loading'
-    })}
->
-  Reject Action
-</button>
+<output>
+  <Highlight style="height: 100px;" language={js} code={code[state]} />
+</output>
+<main>
+  <button
+    on:click={() => {
+      state = 'success'
+      $toast.success('Success Response')
+    }}
+  >
+    Success Action
+  </button>
+  <button
+    on:click={() => {
+      state = 'error'
+      $toast.error('Error Response')
+    }}
+  >
+    Error Action</button
+  >
+  <button
+    on:click={() => {
+      state = 'resolve'
+      $toast.promise(new Promise((_) => setTimeout(_, 2000)), {
+        success: 'Resolved',
+        error: 'Rejected',
+        loading: 'Loading'
+      })
+    }}
+  >
+    Resolve Action
+  </button>
+  <button
+    on:click={() => {
+      state = 'reject'
+      $toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
+        success: 'Resolved',
+        error: 'Rejected',
+        loading: 'Loading'
+      })
+    }}
+  >
+    Reject Action
+  </button>
+</main>
 
 <style>
+  output {
+    font-size: larger;
+  }
   button {
     padding: 1rem 2rem;
     border-radius: 9999px;
@@ -39,5 +66,29 @@
     background: inherit;
     color: inherit;
     border: 1px solid #aaa;
+  }
+  button:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  button:active {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  :global(.dark) button:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  :global(.dark) button:active {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  :global(code) {
+    padding: 1rem;
+    border-radius: 1rem;
   }
 </style>
