@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/svelte-device-theme':
-    specifier: 1.2.0
-    version: 1.2.0(svelte@4.2.7)
+    specifier: 1.2.1
+    version: 1.2.1(svelte@4.2.7)
   svelte-french-toast:
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.7)
@@ -324,13 +324,13 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@jill64/svelte-device-theme@1.2.0(svelte@4.2.7):
-    resolution: {integrity: sha512-FiAwDd/LpXXXmD0936mOyvweyDqn5umZqAmgWtu5h8y1QY2w90dt/yqdZmiohvp+bDrNcXGnyy+Du9tnUo0ryQ==}
+  /@jill64/svelte-device-theme@1.2.1(svelte@4.2.7):
+    resolution: {integrity: sha512-1KCfKxXHoNNVPxoaeo8tqCGOH+3X+4OS+lSFEZP6NCiREbrL1cHB2P9mIUN8Xr6HIE1CYlAZIUQBUpb47hadKw==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
-      esm-env: 1.0.0
       svelte: 4.2.7
+      svelte-mq-store: 0.0.1(svelte@4.2.7)
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -1733,6 +1733,15 @@ packages:
     dependencies:
       svelte: 4.2.7
     dev: true
+
+  /svelte-mq-store@0.0.1(svelte@4.2.7):
+    resolution: {integrity: sha512-HHO2tfnbohrkz1Ua46sa076CZeafldE5JWJMz550f+vrc1VGk0X/ud7HmPmi93SHig7z3NiKBOom7F1c8Aqeeg==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      esm-env: 1.0.0
+      svelte: 4.2.7
+    dev: false
 
   /svelte-writable-derived@3.1.0(svelte@4.2.7):
     resolution: {integrity: sha512-cTvaVFNIJ036vSDIyPxJYivKC7ZLtcFOPm1Iq6qWBDo1fOHzfk6ZSbwaKrxhjgy52Rbl5IHzRcWgos6Zqn9/rg==}
