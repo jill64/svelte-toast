@@ -1,7 +1,9 @@
 <script lang="ts">
   import { toast } from '$lib/toast.js'
+  import { HighlightAuto } from 'svelte-highlight'
 </script>
 
+<HighlightAuto code="" />
 <button on:click={() => $toast.success('Success Response')}>
   Success Action
 </button>
@@ -29,16 +31,13 @@
 
 <style>
   button {
-    padding: 8px 16px;
-    margin: 4px;
+    padding: 1rem 2rem;
     border-radius: 9999px;
-    cursor: pointer;
     border: none;
-  }
-  @media (prefers-color-scheme: dark) {
-    button {
-      background: #444;
-      color: #eee;
-    }
+    font-size: large;
+    cursor: pointer;
+    background: inherit;
+    color: inherit;
+    border: 1px solid #aaa;
   }
 </style>
