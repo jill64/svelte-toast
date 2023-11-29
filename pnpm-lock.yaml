@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.7)
   svelte-mq-store:
-    specifier: 0.0.1
-    version: 0.0.1(svelte@4.2.7)
+    specifier: 1.0.0
+    version: 1.0.0(svelte@4.2.7)
 
 devDependencies:
   '@jill64/sentry-sveltekit-cloudflare':
@@ -2154,15 +2154,6 @@ packages:
     dependencies:
       svelte: 4.2.7
     dev: true
-
-  /svelte-mq-store@0.0.1(svelte@4.2.7):
-    resolution: {integrity: sha512-HHO2tfnbohrkz1Ua46sa076CZeafldE5JWJMz550f+vrc1VGk0X/ud7HmPmi93SHig7z3NiKBOom7F1c8Aqeeg==}
-    peerDependencies:
-      svelte: ^4.0.0
-    dependencies:
-      esm-env: 1.0.0
-      svelte: 4.2.7
-    dev: false
 
   /svelte-mq-store@1.0.0(svelte@4.2.7):
     resolution: {integrity: sha512-3n/86onQtqd231vW066341pDTnBXPqDEPcc0JGTmKtHqmA6ipa6iIu4siGXpsDrI26u3A9YazuRSiGsKKErabQ==}
