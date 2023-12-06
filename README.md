@@ -8,12 +8,6 @@
 
 ## [Demo](https://stackblitz.com/edit/jill64-svelte-toast?file=src%2Froutes%2FDemo.svelte)
 
-## Installation
-
-```sh
-npm i @jill64/svelte-toast
-```
-
 <!----- END GHOST DOCS HEADER ----->
 
 [svelte-french-toast](https://github.com/kbrgl/svelte-french-toast)
