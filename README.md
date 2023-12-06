@@ -10,6 +10,12 @@
 
 <!----- END GHOST DOCS HEADER ----->
 
+## Installation
+
+```sh
+npm i @jill64/svelte-toast
+```
+
 [svelte-french-toast](https://github.com/kbrgl/svelte-french-toast)
 
 - Color palette makes theme setting quick and simple
