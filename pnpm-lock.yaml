@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.8)
   svelte-mq-store:
-    specifier: 2.0.0
-    version: 2.0.0(svelte@4.2.8)
+    specifier: 2.1.0
+    version: 2.1.0(svelte@4.2.8)
 
 devDependencies:
   '@jill64/eslint-config-svelte':
@@ -2811,6 +2811,14 @@ packages:
       svelte: ^4.0.0
     dependencies:
       svelte: 4.2.8
+
+  /svelte-mq-store@2.1.0(svelte@4.2.8):
+    resolution: {integrity: sha512-+j6vXXvmS3R4gRjS4vSH5eqLNhlAkMe7/wAjqcZCSiUQ0Drq+DiYthdhGGXKgXDANw0wumbZEFn1B4BI9puSTA==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.8
+    dev: false
 
   /svelte-writable-derived@3.1.0(svelte@4.2.8):
     resolution: {integrity: sha512-cTvaVFNIJ036vSDIyPxJYivKC7ZLtcFOPm1Iq6qWBDo1fOHzfk6ZSbwaKrxhjgy52Rbl5IHzRcWgos6Zqn9/rg==}
