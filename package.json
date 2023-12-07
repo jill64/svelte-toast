@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-toast",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "🍞 Pre-Themed Responsive Toast Notification",
   "type": "module",
   "main": "dist/index.js",
@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@jill64/svelte-device-theme": "1.2.3",
-    "svelte-mq-store": "2.1.0",
+    "svelte-mq-store": "2.1.1",
     "svelte-french-toast": "1.2.0"
   }
 }
