@@ -29,8 +29,8 @@ devDependencies:
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-dark-theme':
-    specifier: 2.2.11
-    version: 2.2.11(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+    specifier: 2.2.12
+    version: 2.2.12(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@playwright/test':
     specifier: 1.40.1
     version: 1.40.1
@@ -609,14 +609,14 @@ packages:
       - svelte
     dev: true
 
-  /@jill64/svelte-dark-theme@2.2.11(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-pGtmKFR+cDxV7DelsOS/3zHaRw83imNVZ2UPYpmJsadiDq6lcQk64oLoTUjXuYMwCc+hklkQ4zh1EsEJuFTf9Q==}
+  /@jill64/svelte-dark-theme@2.2.12(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-a3d0sv5bLkmAnYR+2NM5WSJRCp1/1DcouwHrZFmNDoQbucDC/RFEZ4RisO0LngfScEA2HasN9TtlYs1sGIsg8Q==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
     dependencies:
       '@jill64/attempt': 1.1.0
-      '@jill64/svelte-device-theme': 1.2.3(svelte@4.2.8)
+      '@jill64/svelte-device-theme': 1.2.4(svelte@4.2.8)
       '@jill64/svelte-html': 1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
       '@jill64/svelte-storage': 0.0.5(@sveltejs/kit@1.27.7)(svelte@4.2.8)
       '@sveltejs/kit': 1.27.7(svelte@4.2.8)(vite@5.0.6)
@@ -633,6 +633,16 @@ packages:
     dependencies:
       svelte: 4.2.8
       svelte-mq-store: 2.0.0(svelte@4.2.8)
+    dev: false
+
+  /@jill64/svelte-device-theme@1.2.4(svelte@4.2.8):
+    resolution: {integrity: sha512-ngRTLMV8dYgPdYGFFVv/ngyq5pTobfKhisrCwJYt86jFnyZgRY/iOWD+JGFMo9D1QUEtcn9P4Y3wGTbd2Sdg0Q==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.8
+      svelte-mq-store: 2.1.1(svelte@4.2.8)
+    dev: true
 
   /@jill64/svelte-html@1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8):
     resolution: {integrity: sha512-kj3ujgKFTN47mcyNA+sjIXV+PrRxdiMBYIh8ba5sfZ8hhxhyy8VJDcoEWupO2RCsPhC5+gCmRwbg6Td771ndZQ==}
@@ -2811,6 +2821,7 @@ packages:
       svelte: ^4.0.0
     dependencies:
       svelte: 4.2.8
+    dev: false
 
   /svelte-mq-store@2.1.1(svelte@4.2.8):
     resolution: {integrity: sha512-kvh3OXsef9IF0YiBKROlgniCzBO/V4hIVAV35kp6wH+p5aQR5F5df7dxMBa47tclWvI7huPntMKwM6YGTo8mUA==}
@@ -2818,7 +2829,6 @@ packages:
       svelte: ^4.0.0
     dependencies:
       svelte: 4.2.8
-    dev: false
 
   /svelte-writable-derived@3.1.0(svelte@4.2.8):
     resolution: {integrity: sha512-cTvaVFNIJ036vSDIyPxJYivKC7ZLtcFOPm1Iq6qWBDo1fOHzfk6ZSbwaKrxhjgy52Rbl5IHzRcWgos6Zqn9/rg==}
