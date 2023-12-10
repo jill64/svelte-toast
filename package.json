@@ -6,10 +6,10 @@
   "main": "dist/index.js",
   "license": "MIT",
   "author": {
-    "name": "Jill",
-    "email": "",
-    "url": "",
-    "image": ""
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
   },
   "bugs": "https://github.com/jill64/svelte-toast/issues",
   "homepage": "https://github.com/jill64/svelte-toast#readme",
@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-toast.git",
-    "image": ""
+    "image": "https://opengraph.githubassets.com/62c55eb20bcb350e9e57ba78d40f56e805f2f8edadf2fbb7c924d5c756dc5f05/jill64/svelte-toast"
   },
   "scripts": {
     "dev": "npm run build && vite dev",
