@@ -5,7 +5,13 @@ import { vitePreprocess } from '@sveltejs/kit/vite'
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter()
+    adapter: adapter(),
+    alias:
+      process.env.NODE_ENV === 'production'
+        ? {}
+        : {
+            '@jill64/svelte-toast': './dist/index.js'
+          }
   }
 }
 

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { toast } from '$lib/toast.js'
-  import { Highlight } from 'svelte-highlight'
-  import js from 'svelte-highlight/languages/javascript'
+  import { toast } from '@jill64/npm-demo-layout'
+  import { Highlight } from '@jill64/npm-demo-layout/highlight'
+  import { javascript as js } from '@jill64/npm-demo-layout/highlight/languages'
   import { code } from './code'
 
   let state: keyof typeof code = ''
