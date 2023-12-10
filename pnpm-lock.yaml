@@ -19,6 +19,9 @@ devDependencies:
   '@jill64/eslint-config-svelte':
     specifier: 1.0.1
     version: 1.0.1(svelte@4.2.8)(typescript@5.3.3)
+  '@jill64/npm-demo-layout':
+    specifier: 0.1.4
+    version: 0.1.4(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/playwright-config':
     specifier: 2.2.0
     version: 2.2.0(@playwright/test@1.40.1)
@@ -28,9 +31,6 @@ devDependencies:
   '@jill64/sentry-sveltekit-cloudflare':
     specifier: 1.5.0
     version: 1.5.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
-  '@jill64/svelte-dark-theme':
-    specifier: 2.2.14
-    version: 2.2.14(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@playwright/test':
     specifier: 1.40.1
     version: 1.40.1
@@ -43,9 +43,6 @@ devDependencies:
   svelte:
     specifier: 4.2.8
     version: 4.2.8
-  svelte-highlight:
-    specifier: 7.4.2
-    version: 7.4.2
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -583,6 +580,21 @@ packages:
       - typescript
     dev: true
 
+  /@jill64/npm-demo-layout@0.1.4(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-GUefeTOufBlmPQ/l/+9DlG3dtbR39JpZURgdrl4Zcvn7gfzVz+HgbMqv2/MUzeg1P3uKYsASx0f5KS4FW4hJFg==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/svelte-dark-theme': 2.2.14(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+      '@jill64/svelte-ogp': 0.1.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+      '@jill64/svelte-toast': 1.2.5(svelte@4.2.8)
+      svelte: 4.2.8
+      svelte-highlight: 7.4.2
+      svelte-highlight-switcher: 1.0.0(svelte-highlight@7.4.2)(svelte@4.2.8)
+    transitivePeerDependencies:
+      - '@sveltejs/kit'
+    dev: true
+
   /@jill64/playwright-config@2.2.0(@playwright/test@1.40.1):
     resolution: {integrity: sha512-Pp66hjc93p2pI45QQd0mDhNW91qpoegVc9nM+9+EEMhqd2gSmIMKAwXMP6D3afwKUGY8ynWFiVbk9U22OqW/tQ==}
     peerDependencies:
@@ -644,6 +656,17 @@ packages:
       svelte: 4.2.8
     dev: true
 
+  /@jill64/svelte-ogp@0.1.0(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-6cI/U+r9zNG8CD04/06FwisO4nDCnqSF40kTS1fQWCCe5v+2qliKi6jgiwe/ZRM6U+0cSsKQjMBcZbIgX9j7UQ==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/svelte-html': 1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+      '@sveltejs/kit': 1.27.7(svelte@4.2.8)(vite@5.0.7)
+      svelte: 4.2.8
+    dev: true
+
   /@jill64/svelte-storage@1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8):
     resolution: {integrity: sha512-44AQZATKcrKuS4W/7InaARM8t1ssljLZzCAZwWLYmqWQtruELz7YqrhnLIxPpBopPHEFi/2y42xjc6BgXHoYjg==}
     peerDependencies:
@@ -653,6 +676,17 @@ packages:
       '@jill64/typed-storage': 2.0.5
       '@sveltejs/kit': 1.27.7(svelte@4.2.8)(vite@5.0.7)
       svelte: 4.2.8
+    dev: true
+
+  /@jill64/svelte-toast@1.2.5(svelte@4.2.8):
+    resolution: {integrity: sha512-tyaD5/zg1lRVpWAjA2ajEQD8k1fRthFVy4KQuzsLDUj1hCVSFX1UBj79VK+tg7d6LsMXEc3xtVjTHXRudCN9vw==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/svelte-device-theme': 1.2.4(svelte@4.2.8)
+      svelte: 4.2.8
+      svelte-french-toast: 1.2.0(svelte@4.2.8)
+      svelte-mq-store: 2.1.1(svelte@4.2.8)
     dev: true
 
   /@jill64/transform@1.0.0:
@@ -2788,7 +2822,16 @@ packages:
     dependencies:
       svelte: 4.2.8
       svelte-writable-derived: 3.1.0(svelte@4.2.8)
-    dev: false
+
+  /svelte-highlight-switcher@1.0.0(svelte-highlight@7.4.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-R/eU8SjrPfxjNe3Odw39p3oJTwl1F1zoSgceOPKwVXMd6MXik0Yn1YqzE8vuJLbzF3KY6zSwc26/yAbGz1ELdQ==}
+    peerDependencies:
+      svelte: ^4.0.0
+      svelte-highlight: ^7.0.0
+    dependencies:
+      svelte: 4.2.8
+      svelte-highlight: 7.4.2
+    dev: true
 
   /svelte-highlight@7.4.2:
     resolution: {integrity: sha512-J0AGYK1bJCc5t4P8bT7NuCc0224XurJKF57YUJPxj8sqbfAYICyom5+spF2fyPHGKgZtkX8jNQLGwHgPzfCapA==}
@@ -2818,7 +2861,6 @@ packages:
       svelte: ^3.2.1 || ^4.0.0-next.1
     dependencies:
       svelte: 4.2.8
-    dev: false
 
   /svelte@3.59.2:
     resolution: {integrity: sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==}

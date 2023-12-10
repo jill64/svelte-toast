@@ -5,7 +5,12 @@
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "Jill",
+    "email": "",
+    "url": "",
+    "image": ""
+  },
   "bugs": "https://github.com/jill64/svelte-toast/issues",
   "homepage": "https://github.com/jill64/svelte-toast#readme",
   "files": [
@@ -28,10 +33,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/svelte-toast.git"
+    "url": "https://github.com/jill64/svelte-toast.git",
+    "image": ""
   },
   "scripts": {
-    "dev": "vite dev",
+    "dev": "npm run build && vite dev",
     "build": "vite build && npm run package",
     "test": "playwright test",
     "preview": "npm run build && vite preview",
@@ -46,22 +52,21 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/sentry-sveltekit-cloudflare": "1.5.0",
     "@jill64/eslint-config-svelte": "1.0.1",
-    "@jill64/prettier-config": "1.0.0",
+    "@jill64/npm-demo-layout": "0.1.4",
     "@jill64/playwright-config": "2.2.0",
-    "@jill64/svelte-dark-theme": "2.2.14",
+    "@jill64/prettier-config": "1.0.0",
+    "@jill64/sentry-sveltekit-cloudflare": "1.5.0",
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "2.3.4",
     "@sveltejs/kit": "1.27.7",
     "svelte": "4.2.8",
-    "svelte-highlight": "7.4.2",
     "typescript": "5.3.3",
     "vite": "5.0.7"
   },
   "dependencies": {
     "@jill64/svelte-device-theme": "1.2.4",
-    "svelte-mq-store": "2.1.1",
-    "svelte-french-toast": "1.2.0"
+    "svelte-french-toast": "1.2.0",
+    "svelte-mq-store": "2.1.1"
   }
 }
