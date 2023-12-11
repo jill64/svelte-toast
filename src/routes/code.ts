@@ -1,7 +1,6 @@
 import { match } from 'ts-pattern'
 
-const base = (label: string, fn: string) => () =>
-  /* html */ `
+const base = (label: string, fn: string) => () => /* html */ `
 <script>
   import { toast } from '@jill64/svelte-toast'
 
