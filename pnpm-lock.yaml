@@ -43,6 +43,12 @@ devDependencies:
   svelte:
     specifier: 4.2.8
     version: 4.2.8
+  ts-match:
+    specifier: ^1.1.6
+    version: 1.1.6
+  ts-pattern:
+    specifier: ^5.0.6
+    version: 5.0.6
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -1122,6 +1128,7 @@ packages:
   /@sveltejs/kit@1.27.7(svelte@4.2.8)(vite@5.0.7):
     resolution: {integrity: sha512-AzXYDoYt42clCBwLF9GTHsXyg2DFR31Ncyt8yxu8Aw4tgB433V+w+hcr1RTfAN9zKW2J2PY9FMQ8FoX/4Vw8CA==}
     engines: {node: ^16.14 || >=18}
+    hasBin: true
     requiresBuild: true
     peerDependencies:
       svelte: ^3.54.0 || ^4.0.0-next.0 || ^5.0.0-next.0
@@ -1707,6 +1714,7 @@ packages:
 
   /eslint-config-prettier@9.1.0(eslint@8.55.0):
     resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+    hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
@@ -2914,6 +2922,14 @@ packages:
       typescript: 5.3.3
     dev: true
 
+  /ts-match@1.1.6:
+    resolution: {integrity: sha512-TSPIWmi+f9YTdAgnfoWmFK0dpDMJ3Nb2gV16s0aOedZ+PXrixD4CFbFJ3RwrvGeBQvGcca3AbP7vXbA3isXmpw==}
+    dev: true
+
+  /ts-pattern@5.0.6:
+    resolution: {integrity: sha512-Y+jOjihlFriWzcBjncPCf2/am+Hgz7LtsWs77pWg5vQQKLQj07oNrJryo/wK2G0ndNaoVn2ownFMeoeAuReu3Q==}
+    dev: true
+
   /ts-serde@1.0.0:
     resolution: {integrity: sha512-SNjdIkVUqUzfHQ6n+MPDwloWXj7TYYntgJ9xh3Sy0qkrOTJex8Zlz5JkfYkRnPTm1dLvjHJrLbxBmgFY7xJqGg==}
     dependencies:
@@ -2999,6 +3015,7 @@ packages:
   /vite@5.0.7:
     resolution: {integrity: sha512-B4T4rJCDPihrQo2B+h1MbeGL/k/GMAHzhQ8S0LjQ142s6/+l3hHTT095ORvsshj4QCkoWu3Xtmob5mazvakaOw==}
     engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
     peerDependencies:
       '@types/node': ^18.0.0 || >=20.0.0
       less: '*'

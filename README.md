@@ -10,21 +10,21 @@
 
 <!----- END GHOST DOCS HEADER ----->
 
+This library is a personal extension of [svelte-french-toast](https://github.com/kbrgl/svelte-french-toast)
+
+- Color palette makes theme setting quick and simple
+- Applies device dark theme by default
+- Most of the original methods are available
+
 ## Installation
 
 ```sh
 npm i @jill64/svelte-toast
 ```
 
-[svelte-french-toast](https://github.com/kbrgl/svelte-french-toast)
-
-- Color palette makes theme setting quick and simple
-- Applies device dark theme by default
-- Most of the original methods are available
-
 ## Usage
 
-```svelte:+layout.svelte
+```svelte
 <!-- +layout.svelte -->
 <script>
   import { Toaster } from '@jill64/svelte-toast'
@@ -46,7 +46,7 @@ npm i @jill64/svelte-toast
 <!-- ... -->
 ```
 
-```svelte:+page.svelte
+```svelte
 <!-- +page.svelte -->
 <script>
   import { toast } from '@jill64/svelte-toast'
