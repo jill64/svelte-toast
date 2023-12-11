@@ -43,6 +43,9 @@ devDependencies:
   svelte:
     specifier: 4.2.8
     version: 4.2.8
+  ts-pattern:
+    specifier: 5.0.6
+    version: 5.0.6
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -2912,6 +2915,10 @@ packages:
       typescript: '>=4.2.0'
     dependencies:
       typescript: 5.3.3
+    dev: true
+
+  /ts-pattern@5.0.6:
+    resolution: {integrity: sha512-Y+jOjihlFriWzcBjncPCf2/am+Hgz7LtsWs77pWg5vQQKLQj07oNrJryo/wK2G0ndNaoVn2ownFMeoeAuReu3Q==}
     dev: true
 
   /ts-serde@1.0.0:

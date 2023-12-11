@@ -1,15 +1,12 @@
 <script lang="ts">
   import { toast } from '@jill64/npm-demo-layout'
-  import { Highlight } from '@jill64/npm-demo-layout/highlight'
-  import { javascript as js } from '@jill64/npm-demo-layout/highlight/languages'
+  import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { code } from './code'
+  import { rootCode } from './rootCode'
 
-  let state: keyof typeof code = ''
+  let state: '' | 'success' | 'error' | 'resolve' | 'reject' = ''
 </script>
 
-<output>
-  <Highlight style="height: 100px;" language={js} code={code[state]} />
-</output>
 <main>
   <button
     on:click={() => {
@@ -52,6 +49,10 @@
     Reject Action
   </button>
 </main>
+<output>
+  <HighlightSvelte code={rootCode.trim()} />
+  <HighlightSvelte code={code(state).trim()} />
+</output>
 
 <style>
   output {
