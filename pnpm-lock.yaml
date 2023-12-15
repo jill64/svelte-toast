@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/svelte-device-theme':
-    specifier: 1.2.5
-    version: 1.2.5(@sveltejs/kit@2.0.0)(svelte@4.2.8)
+    specifier: 1.2.6
+    version: 1.2.6(@sveltejs/kit@2.0.0)(svelte@4.2.8)
   svelte-french-toast:
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.8)
@@ -434,8 +434,8 @@ packages:
       svelte-mq-store: 2.1.1(svelte@4.2.8)
     dev: true
 
-  /@jill64/svelte-device-theme@1.2.5(@sveltejs/kit@2.0.0)(svelte@4.2.8):
-    resolution: {integrity: sha512-DIfiwOcPX3kBHorq7RtyGiDwHLtHIPmC8loUlkHxQT8G/525LcCS6QPp5Ft3NULdUACZE9LZi6Fob8cF4qZtTw==}
+  /@jill64/svelte-device-theme@1.2.6(@sveltejs/kit@2.0.0)(svelte@4.2.8):
+    resolution: {integrity: sha512-2yxszyixUX+qGWeNvLuqPnsEuiAs40DhGQbMj78XaJ0lNwXJrA+XPafazXmVjCCbZUBi/B9j7JyjHPdFn0afRA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
