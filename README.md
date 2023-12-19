@@ -78,3 +78,11 @@ npm i @jill64/svelte-toast
 <button on:click={onError}> Error </button>
 <button on:click={onPromise}> Promise </button>
 ```
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
