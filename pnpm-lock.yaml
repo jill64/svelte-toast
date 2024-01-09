@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.8)
   svelte-mq-store:
-    specifier: 2.2.2
-    version: 2.2.2(@sveltejs/kit@2.0.8)(svelte@4.2.8)
+    specifier: 2.2.3
+    version: 2.2.3(@sveltejs/kit@2.0.8)(svelte@4.2.8)
 
 devDependencies:
   '@jill64/eslint-config-svelte':
