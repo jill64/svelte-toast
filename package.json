@@ -68,7 +68,7 @@
     "@sveltejs/vite-plugin-svelte": "3.0.1"
   },
   "dependencies": {
-    "@jill64/svelte-device-theme": "1.2.9",
+    "@jill64/svelte-device-theme": "1.2.10",
     "svelte-french-toast": "1.2.0",
     "svelte-mq-store": "2.2.4"
   }
