@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/svelte-device-theme':
-    specifier: 1.2.10
-    version: 1.2.10(@sveltejs/kit@2.4.1)(svelte@4.2.9)
+    specifier: 1.2.11
+    version: 1.2.11(@sveltejs/kit@2.4.1)(svelte@4.2.9)
   svelte-french-toast:
     specifier: 1.2.0
     version: 1.2.0(svelte@4.2.9)
@@ -413,6 +413,18 @@ packages:
       svelte-mq-store: 2.2.4(@sveltejs/kit@2.4.1)(svelte@4.2.9)
     transitivePeerDependencies:
       - '@sveltejs/kit'
+    dev: true
+
+  /@jill64/svelte-device-theme@1.2.11(@sveltejs/kit@2.4.1)(svelte@4.2.9):
+    resolution: {integrity: sha512-YAVc0Nyu1+pt6TqJUhQDAxmdgE1+C/VsZQ9WBtwCuMp6qqJ0w9/xkWRlFkrPTFcoMm18YvOE2/D4UE1FUPvHrw==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.9
+      svelte-mq-store: 2.2.5(@sveltejs/kit@2.4.1)(svelte@4.2.9)
+    transitivePeerDependencies:
+      - '@sveltejs/kit'
+    dev: false
 
   /@jill64/svelte-html@1.1.5(@sveltejs/kit@2.4.1)(svelte@4.2.9):
     resolution: {integrity: sha512-v5pxCSCTD9lpNv6t3vkHFEWnHfCsqGqTfel5QhFwoLFL1Bs/zxInLGiG0uWjtGzIwoMv0q2dglm6m7D1+UDwLg==}
@@ -2231,6 +2243,7 @@ packages:
     dependencies:
       '@sveltejs/kit': 2.4.1(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.9)(vite@5.0.12)
       svelte: 4.2.9
+    dev: true
 
   /svelte-mq-store@2.2.5(@sveltejs/kit@2.4.1)(svelte@4.2.9):
     resolution: {integrity: sha512-7v7w8gnNrPHhVrXbnHcnWdjlgyp9bh+TBSDdsy5kLab6CBodFU9T8GaGoK0Qhca0rHR1KRHSzZBR/cYjObvMSg==}
