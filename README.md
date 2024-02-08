@@ -87,6 +87,6 @@ npm i @jill64/svelte-toast
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 <!----- END GHOST DOCS FOOTER ----->
