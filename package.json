@@ -70,6 +70,6 @@
   "dependencies": {
     "@jill64/svelte-device-theme": "1.2.16",
     "svelte-french-toast": "1.2.0",
-    "svelte-mq-store": "2.2.10"
+    "svelte-mq-store": "2.2.11"
   }
 }
