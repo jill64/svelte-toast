@@ -21,7 +21,7 @@
   $: isMobile = listen(mobileQuery)
 
   $: $store =
-    dark ?? $isDark
+    (dark ?? $isDark)
       ? {
           background: '#222',
           text: 'whitesmoke',
