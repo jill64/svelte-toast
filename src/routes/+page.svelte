@@ -1,33 +1,33 @@
 <script lang="ts">
-  import { toast } from '@jill64/npm-demo-layout'
+  import { toast } from '$lib/index'
   import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { code } from './code'
   import { rootCode } from './rootCode'
 
-  let state: '' | 'success' | 'error' | 'resolve' | 'reject' = ''
+  let states = $state<'' | 'success' | 'error' | 'resolve' | 'reject'>('')
 </script>
 
 <main>
   <button
-    on:click={() => {
-      state = 'success'
-      $toast.success('Success Response')
+    onclick={() => {
+      states = 'success'
+      toast.success('Success Response')
     }}
   >
     Success Action
   </button>
   <button
-    on:click={() => {
-      state = 'error'
-      $toast.error('Error Response')
+    onclick={() => {
+      states = 'error'
+      toast.error('Error Response')
     }}
   >
     Error Action</button
   >
   <button
-    on:click={() => {
-      state = 'resolve'
-      $toast.promise(new Promise((_) => setTimeout(_, 2000)), {
+    onclick={() => {
+      states = 'resolve'
+      toast.promise(new Promise((_) => setTimeout(_, 2000)), {
         success: 'Resolved',
         error: 'Rejected',
         loading: 'Loading'
@@ -37,9 +37,9 @@
     Resolve Action
   </button>
   <button
-    on:click={() => {
-      state = 'reject'
-      $toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
+    onclick={() => {
+      states = 'reject'
+      toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
         success: 'Resolved',
         error: 'Rejected',
         loading: 'Loading'
@@ -51,7 +51,7 @@
 </main>
 <output>
   <HighlightSvelte code={rootCode.trim()} />
-  <HighlightSvelte code={code(state).trim()} />
+  <HighlightSvelte code={code(states).trim()} />
 </output>
 
 <style>
