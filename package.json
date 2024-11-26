@@ -65,7 +65,7 @@
     "ts-pattern": "5.5.0",
     "typescript": "5.7.2",
     "vite": "5.4.11",
-    "@sveltejs/vite-plugin-svelte": "3.1.2"
+    "@sveltejs/vite-plugin-svelte": "5.0.0"
   },
   "dependencies": {
     "@jill64/svelte-device-theme": "1.2.27",
