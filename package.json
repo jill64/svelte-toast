@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-toast.git",
-    "image": "https://opengraph.githubassets.com/6dc39b164a953987b2fedc9d1a1f9d8442b3563baf536f05eb49c7a551d29418/jill64/svelte-toast"
+    "image": "https://opengraph.githubassets.com/fd8373192f007362e16188ce34554d076ab060b88e941f7c97cda63fb0e5afad/jill64/svelte-toast"
   },
   "scripts": {
     "dev": "npm run build && vite dev",
@@ -52,7 +52,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/eslint-config-svelte": "1.3.27",
+    "@jill64/eslint-config-svelte": "1.3.28",
     "@jill64/npm-demo-layout": "1.0.249",
     "@jill64/universal-sanitizer": "1.3.5",
     "@jill64/playwright-config": "2.4.2",
