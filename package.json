@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-toast.git",
-    "image": "https://opengraph.githubassets.com/209efaa1a899d48db383fa60567a42a527351d2059e0152214a231f260e916a8/jill64/svelte-toast"
+    "image": "https://opengraph.githubassets.com/f1a5def16b332f80648dd67a3ffab188529050048d2995ec87420f023b649b53/jill64/svelte-toast"
   },
   "scripts": {
     "dev": "npm run build && vite dev",
@@ -60,7 +60,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
     "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.0",
-    "@sveltejs/kit": "2.8.3",
+    "@sveltejs/kit": "2.15.1",
     "svelte": "4.2.19",
     "ts-pattern": "5.6.0",
     "typescript": "5.7.2",
