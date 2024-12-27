@@ -48,7 +48,7 @@
     "format": "npx @jill64/psx"
   },
   "peerDependencies": {
-    "svelte": "^4.0.0"
+    "svelte": "^4.0.0 || ^5.0.0"
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
