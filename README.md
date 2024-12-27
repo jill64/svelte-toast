@@ -34,7 +34,7 @@ npm i @jill64/svelte-toast
   import { Toaster } from '@jill64/svelte-toast'
 
   // Optional Color Palette
-  $: palette = {
+  const palette = {
     background: '#EEE',
     text: '#000',
     success: '#29cf60',
@@ -55,16 +55,16 @@ npm i @jill64/svelte-toast
 <script>
   import { toast } from '@jill64/svelte-toast'
 
-  const onSuccess = () => $toast.success('Success', {
+  const onSuccess = () => toast.success('Success', {
     // Optional Toast Config
   })
 
-  const onError= () => $toast.error('Error', {
+  const onError= () => toast.error('Error', {
     // Optional Toast Config
   })
 
   const onPromise = () =>
-    $toast.promise(
+    toast.promise(
       // Your Promise
       ,
       {
@@ -78,9 +78,9 @@ npm i @jill64/svelte-toast
     )
 </script>
 
-<button on:click={onSuccess}> Success </button>
-<button on:click={onError}> Error </button>
-<button on:click={onPromise}> Promise </button>
+<button onclick={onSuccess}> Success </button>
+<button onclick={onError}> Error </button>
+<button onclick={onPromise}> Promise </button>
 ```
 
 <!----- BEGIN GHOST DOCS FOOTER ----->
