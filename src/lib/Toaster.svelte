@@ -10,23 +10,23 @@
     reverseOrder,
     position = 'bottom-left',
     mobilePosition = 'top-center',
-    toastOptions,
-    gutter,
-    containerStyle,
-    containerClassName,
-    palette,
-    dark,
+    toastOptions = undefined,
+    gutter = undefined,
+    containerStyle = undefined,
+    containerClassName = undefined,
+    palette = undefined,
+    dark = undefined,
     mobileQuery = '(max-width: 640px)'
   }: {
-    reverseOrder: boolean | undefined
+    reverseOrder?: boolean
     position: ToastPosition
-    mobilePosition: ToastPosition | undefined
-    toastOptions: ToastOptions | undefined
-    gutter: number | undefined
-    containerStyle: string | undefined
-    containerClassName: string | undefined
-    palette: Partial<Palette> | undefined
-    dark: boolean | undefined
+    mobilePosition?: ToastPosition
+    toastOptions?: ToastOptions
+    gutter?: number
+    containerStyle?: string
+    containerClassName?: string
+    palette?: Partial<Palette>
+    dark?: boolean
     mobileQuery: string
   } = $props()
 
@@ -80,7 +80,7 @@
 </script>
 
 <Toaster
-  position={isMobile ? mobilePosition : position}
+  position={isMobile.v ? mobilePosition : position}
   {reverseOrder}
   {toastOptions}
   {gutter}

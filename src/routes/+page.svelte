@@ -11,7 +11,7 @@
   <button
     onclick={() => {
       state = 'success'
-      toast.success('Success Response')
+      $toast.success('Success Response')
     }}
   >
     Success Action
@@ -19,7 +19,7 @@
   <button
     onclick={() => {
       state = 'error'
-      toast.error('Error Response')
+      $toast.error('Error Response')
     }}
   >
     Error Action</button
@@ -27,7 +27,7 @@
   <button
     onclick={() => {
       state = 'resolve'
-      toast.promise(new Promise((_) => setTimeout(_, 2000)), {
+      $toast.promise(new Promise((_) => setTimeout(_, 2000)), {
         success: 'Resolved',
         error: 'Rejected',
         loading: 'Loading'
@@ -39,7 +39,7 @@
   <button
     onclick={() => {
       state = 'reject'
-      toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
+      $toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
         success: 'Resolved',
         error: 'Rejected',
         loading: 'Loading'
