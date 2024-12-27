@@ -7,7 +7,7 @@ const base = (label: string, fn: string) => () => /* html */ `
   const onClick = () => ${fn}
 </script>
 
-<button on:click={onClick}>
+<button onclick={onClick}>
   ${label}
 </button>
 `

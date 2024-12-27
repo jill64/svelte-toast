@@ -4,30 +4,30 @@
   import { code } from './code'
   import { rootCode } from './rootCode'
 
-  let state: '' | 'success' | 'error' | 'resolve' | 'reject' = ''
+  let state: '' | 'success' | 'error' | 'resolve' | 'reject' = $state('')
 </script>
 
 <main>
   <button
-    on:click={() => {
+    onclick={() => {
       state = 'success'
-      $toast.success('Success Response')
+      toast.success('Success Response')
     }}
   >
     Success Action
   </button>
   <button
-    on:click={() => {
+    onclick={() => {
       state = 'error'
-      $toast.error('Error Response')
+      toast.error('Error Response')
     }}
   >
     Error Action</button
   >
   <button
-    on:click={() => {
+    onclick={() => {
       state = 'resolve'
-      $toast.promise(new Promise((_) => setTimeout(_, 2000)), {
+      toast.promise(new Promise((_) => setTimeout(_, 2000)), {
         success: 'Resolved',
         error: 'Rejected',
         loading: 'Loading'
@@ -37,9 +37,9 @@
     Resolve Action
   </button>
   <button
-    on:click={() => {
+    onclick={() => {
       state = 'reject'
-      $toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
+      toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
         success: 'Resolved',
         error: 'Rejected',
         loading: 'Loading'
