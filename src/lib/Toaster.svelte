@@ -7,7 +7,7 @@
   import type { Palette } from './types/Palette.js'
 
   let {
-    reverseOrder,
+    reverseOrder = undefined,
     position = 'bottom-left',
     mobilePosition = 'top-center',
     toastOptions = undefined,
