@@ -18,15 +18,15 @@
     dark = undefined,
     mobileQuery = '(max-width: 640px)'
   }: {
-    reverseOrder?: boolean
-    position: ToastPosition
-    mobilePosition?: ToastPosition
-    toastOptions?: ToastOptions
-    gutter?: number
-    containerStyle?: string
-    containerClassName?: string
-    palette?: Partial<Palette>
-    dark?: boolean
+    reverseOrder: boolean | undefined
+    position: ToastPosition | undefined
+    mobilePosition: ToastPosition | undefined
+    toastOptions: ToastOptions | undefined
+    gutter: number | undefined
+    containerStyle: string | undefined
+    containerClassName: string | undefined
+    palette: Partial<Palette> | undefined
+    dark: boolean | undefined
     mobileQuery: string
   } = $props()
 
