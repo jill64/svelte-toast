@@ -27,7 +27,7 @@
     containerClassName?: string | undefined
     palette?: Partial<Palette> | undefined
     dark?: boolean | undefined
-    mobileQuery: string
+    mobileQuery?: string | undefined
   } = $props()
 
   let isMobile = $derived(listen(mobileQuery))
