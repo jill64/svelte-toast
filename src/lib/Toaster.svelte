@@ -80,7 +80,7 @@
 </script>
 
 <Toaster
-  position={isMobile ? mobilePosition : position}
+  position={isMobile.v ? mobilePosition : position}
   {reverseOrder}
   {toastOptions}
   {gutter}
