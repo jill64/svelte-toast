@@ -1,45 +1,86 @@
 <script lang="ts">
-  import { isDark } from '@jill64/svelte-device-theme'
+  import { is } from '@jill64/svelte-device-theme'
   import type { ToastOptions, ToastPosition } from 'svelte-french-toast'
   import { Toaster } from 'svelte-french-toast'
   import { listen } from 'svelte-mq-store'
-  import { lightPalette } from './lightPalette.js'
-  import { palette as store } from './palette.js'
+  import { palette as store } from './palette.svelte.js'
   import type { Palette } from './types/Palette.js'
 
-  export let reverseOrder: boolean | undefined = undefined
-  export let position: ToastPosition = 'bottom-left'
-  export let mobilePosition: ToastPosition | undefined = 'top-center'
-  export let toastOptions: ToastOptions | undefined = undefined
-  export let gutter: number | undefined = undefined
-  export let containerStyle: string | undefined = undefined
-  export let containerClassName: string | undefined = undefined
-  export let palette: Partial<Palette> | undefined = undefined
-  export let dark: boolean | undefined = undefined
-  export let mobileQuery = '(max-width: 640px)'
+  let {
+    reverseOrder,
+    position = 'bottom-left',
+    mobilePosition = 'top-center',
+    toastOptions,
+    gutter,
+    containerStyle,
+    containerClassName,
+    palette,
+    dark,
+    mobileQuery = '(max-width: 640px)'
+  }: {
+    reverseOrder: boolean | undefined
+    position: ToastPosition
+    mobilePosition: ToastPosition | undefined
+    toastOptions: ToastOptions | undefined
+    gutter: number | undefined
+    containerStyle: string | undefined
+    containerClassName: string | undefined
+    palette: Partial<Palette> | undefined
+    dark: boolean | undefined
+    mobileQuery: string
+  } = $props()
 
-  $: isMobile = listen(mobileQuery)
+  let isMobile = $derived(listen(mobileQuery))
 
-  $: $store =
-    (dark ?? $isDark)
-      ? {
-          background: '#222',
-          text: 'whitesmoke',
-          success: 'darkgreen',
-          error: 'darkred',
-          secondary: 'gainsboro',
-          loading: '#888',
-          loading_secondary: '#555',
-          ...palette
-        }
-      : {
-          ...lightPalette,
-          ...palette
-        }
+  let predefined_dark = $derived({
+    background: '#222',
+    text: 'whitesmoke',
+    success: 'darkgreen',
+    error: 'darkred',
+    secondary: 'gainsboro',
+    loading: '#888',
+    loading_secondary: '#555',
+    ...palette
+  })
+
+  let predefined_light = $derived({
+    background: 'whitesmoke',
+    text: 'black',
+    success: 'limegreen',
+    error: 'crimson',
+    secondary: 'white',
+    loading: 'gray',
+    loading_secondary: 'lightgray',
+    ...palette
+  })
+
+  $effect(() => {
+    const isDark = dark ?? is.dark
+
+    store.background = isDark
+      ? predefined_dark.background
+      : predefined_light.background
+
+    store.text = isDark ? predefined_dark.text : predefined_light.text
+
+    store.success = isDark ? predefined_dark.success : predefined_light.success
+
+    store.error = isDark ? predefined_dark.error : predefined_light.error
+
+    store.secondary = isDark
+      ? predefined_dark.secondary
+      : predefined_light.secondary
+
+    store.loading = isDark ? predefined_dark.loading : predefined_light.loading
+
+    store.loading_secondary = isDark
+      ? predefined_dark.loading_secondary
+      : predefined_light.loading_secondary
+  })
 </script>
 
 <Toaster
-  position={$isMobile ? mobilePosition : position}
+  position={isMobile ? mobilePosition : position}
   {reverseOrder}
   {toastOptions}
   {gutter}
