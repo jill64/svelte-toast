@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-toast",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "🍞 Pre-Themed Responsive Toast Notification",
   "type": "module",
   "main": "dist/index.js",
@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-toast.git",
-    "image": "https://opengraph.githubassets.com/577ab80a9ecad2880e8d23318a4146294a7a9489d85e2b60492cb3c4c47b67c3/jill64/svelte-toast"
+    "image": "https://opengraph.githubassets.com/1d6030aa27c1fe8c2e64195c5811442915f5263ec3aad4e3ac25a7da9bf23b96/jill64/svelte-toast"
   },
   "scripts": {
     "dev": "npm run build && vite dev",
