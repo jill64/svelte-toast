@@ -12,43 +12,43 @@ export let palette = {
   get background() {
     return background
   },
-  set background(value: string) {
+  set background(value) {
     background = value
   },
   get text() {
     return text
   },
-  set text(value: string) {
+  set text(value) {
     text = value
   },
   get success() {
     return success
   },
-  set success(value: string) {
+  set success(value) {
     success = value
   },
   get error() {
     return error
   },
-  set error(value: string) {
+  set error(value) {
     error = value
   },
   get secondary() {
     return secondary
   },
-  set secondary(value: string) {
+  set secondary(value) {
     secondary = value
   },
   get loading() {
     return loading
   },
-  set loading(value: string) {
+  set loading(value) {
     loading = value
   },
   get loading_secondary() {
     return loading_secondary
   },
-  set loading_secondary(value: string) {
+  set loading_secondary(value) {
     loading_secondary = value
   }
 } satisfies Palette
