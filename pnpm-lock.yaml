@@ -18,8 +18,8 @@ importers:
         version: 3.0.0(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@22.5.5)))(svelte@5.16.2)(vite@6.0.7(@types/node@22.5.5)))(svelte@5.16.2)
     devDependencies:
       '@jill64/eslint-config-svelte':
-        specifier: 2.0.3
-        version: 2.0.3(svelte@5.16.2)(typescript@5.7.2)
+        specifier: 2.0.4
+        version: 2.0.4(svelte@5.16.2)(typescript@5.7.2)
       '@jill64/npm-demo-layout':
         specifier: 2.0.7
         version: 2.0.7(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.7(@types/node@22.5.5)))(svelte@5.16.2)(vite@6.0.7(@types/node@22.5.5)))(svelte@5.16.2)
@@ -682,10 +682,10 @@ packages:
       }
     engines: { node: '>=18.18' }
 
-  '@jill64/eslint-config-svelte@2.0.3':
+  '@jill64/eslint-config-svelte@2.0.4':
     resolution:
       {
-        integrity: sha512-E/A1nA22fc0V9jTL1km0rZybj/PkS331rgUMOqybvI6SOW96J5pNyUE1WXsTNkhwG3JBmuGo9gmHeKCD9Xw8eQ==
+        integrity: sha512-3IB6z2LZnVtxZDT2WGzcG+8GgES9+GVSBZa4uj6bA0o+gw/SfgZS3sFGvweNCv9kw4PzuDgNAZe3WLWQRPmr8A==
       }
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
@@ -1611,10 +1611,10 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-prettier@9.1.0:
+  eslint-config-prettier@10.0.1:
     resolution:
       {
-        integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==
+        integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==
       }
     hasBin: true
     peerDependencies:
@@ -3143,14 +3143,14 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@jill64/eslint-config-svelte@2.0.3(svelte@5.16.2)(typescript@5.7.2)':
+  '@jill64/eslint-config-svelte@2.0.4(svelte@5.16.2)(typescript@5.7.2)':
     dependencies:
       '@eslint/js': 9.18.0
       '@types/eslint': 9.6.1
       '@typescript-eslint/eslint-plugin': 8.19.0(@typescript-eslint/parser@8.19.0(eslint@9.18.0)(typescript@5.7.2))(eslint@9.18.0)(typescript@5.7.2)
       '@typescript-eslint/parser': 8.19.0(eslint@9.18.0)(typescript@5.7.2)
       eslint: 9.18.0
-      eslint-config-prettier: 9.1.0(eslint@9.18.0)
+      eslint-config-prettier: 10.0.1(eslint@9.18.0)
       eslint-plugin-svelte: 2.46.1(eslint@9.18.0)(svelte@5.16.2)
       svelte: 5.16.2
       svelte-eslint-parser: 0.43.0(svelte@5.16.2)
@@ -3768,7 +3768,7 @@ snapshots:
       eslint: 9.18.0
       semver: 7.6.3
 
-  eslint-config-prettier@9.1.0(eslint@9.18.0):
+  eslint-config-prettier@10.0.1(eslint@9.18.0):
     dependencies:
       eslint: 9.18.0
 
