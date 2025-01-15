@@ -35,7 +35,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-toast.git",
-    "image": "https://opengraph.githubassets.com/65c55f57e11152777ac59202ef85761f432ae89dd75a7867842f8590e050a33d/jill64/svelte-toast"
+    "image": "https://opengraph.githubassets.com/6a246b0fee6c03cb055523e67c04426c3cedbef735c5586fe59f5c9ee2b28865/jill64/svelte-toast"
   },
   "scripts": {
     "dev": "vite dev",
@@ -59,7 +59,7 @@
     "@jill64/universal-sanitizer": "1.4.0",
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
-    "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
+    "@jill64/sentry-sveltekit-cloudflare": "2.0.2",
     "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.0",
     "svelte": "5.16.2",
