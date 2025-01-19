@@ -54,8 +54,8 @@ importers:
         specifier: 5.16.2
         version: 5.16.2
       ts-pattern:
-        specifier: 5.6.0
-        version: 5.6.0
+        specifier: 5.6.1
+        version: 5.6.1
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -2665,10 +2665,10 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
-  ts-pattern@5.6.0:
+  ts-pattern@5.6.1:
     resolution:
       {
-        integrity: sha512-SL8u60X5+LoEy9tmQHWCdPc2hhb2pKI6I1tU5Jue3v8+iRqZdcT3mWPwKKJy1fMfky6uha82c8ByHAE8PMhKHw==
+        integrity: sha512-k126YkAs7sZFGTIr6rEdEbxOkqj4cEKAfhwpJMQcwt2M1SuwSD4PM2ClfeUuIlLwEMtVotiZhOsqXNNWqAMWKA==
       }
 
   ts-serde@1.0.8:
@@ -4379,7 +4379,7 @@ snapshots:
     dependencies:
       typescript: 5.7.3
 
-  ts-pattern@5.6.0: {}
+  ts-pattern@5.6.1: {}
 
   ts-serde@1.0.8:
     dependencies:
