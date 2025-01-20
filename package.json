@@ -35,7 +35,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-toast.git",
-    "image": "https://opengraph.githubassets.com/6802ae2d231e7e96fa6ad6543f02b6f0ce1b58447b444ae53f57a5d259aa5987/jill64/svelte-toast"
+    "image": "https://opengraph.githubassets.com/e8a94bbe03c06c3dfc9f33edc967eee53f0ebea9cacff2415919fc10e9b68e89/jill64/svelte-toast"
   },
   "scripts": {
     "dev": "vite dev",
