@@ -62,7 +62,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
     "@playwright/test": "1.50.1",
     "@sveltejs/adapter-cloudflare": "5.0.2",
-    "svelte": "5.19.6",
+    "svelte": "5.19.7",
     "@sveltejs/kit": "2.16.1",
     "ts-pattern": "5.6.2",
     "typescript": "5.7.3",
