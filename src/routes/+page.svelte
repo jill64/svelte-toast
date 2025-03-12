@@ -27,6 +27,7 @@
   <button
     onclick={() => {
       state = 'resolve'
+      // eslint-disable-next-line no-undef
       toast.promise(new Promise((_) => setTimeout(_, 2000)), {
         success: 'Resolved',
         error: 'Rejected',
@@ -39,6 +40,7 @@
   <button
     onclick={() => {
       state = 'reject'
+      // eslint-disable-next-line no-undef
       toast.promise(new Promise((_, reject) => setTimeout(reject, 2000)), {
         success: 'Resolved',
         error: 'Rejected',
