@@ -10,7 +10,7 @@
       },
       "devDependencies": {
         "@jill64/eslint-config-svelte": "2.2.1",
-        "@jill64/npm-demo-layout": "2.0.16",
+        "@jill64/npm-demo-layout": "2.0.17",
         "@jill64/playwright-config": "3.0.0",
         "@jill64/prettier-config": "1.0.0",
         "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
@@ -174,7 +174,7 @@
 
     "@jill64/eslint-config-svelte": ["@jill64/eslint-config-svelte@2.2.1", "", { "dependencies": { "@eslint/js": "9.22.0", "@types/eslint": "9.6.1", "eslint": "9.22.0", "eslint-config-prettier": "10.1.1", "eslint-plugin-svelte": "3.1.0", "svelte-eslint-parser": "1.0.1", "typescript-eslint": "8.26.1" }, "peerDependencies": { "svelte": "^5.0.0" } }, "sha512-jeV3PlDa3wY3mYJHg0QgS7uWxI0/uXRS7LsVHQUaJgaSSw2/it4s3pfJ5k9/kDrsNPoEMLo+VEgtNaKiyATJUQ=="],
 
-    "@jill64/npm-demo-layout": ["@jill64/npm-demo-layout@2.0.16", "", { "dependencies": { "@jill64/svelte-dark-theme": "5.1.3", "@jill64/svelte-menu": "2.0.1", "@jill64/svelte-ogp": "2.0.2", "@jill64/svelte-sanitize": "2.1.2", "@jill64/svelte-toast": "2.1.6", "svelte-code-copy": "2.2.0", "svelte-highlight": "7.8.2", "svelte-highlight-switcher": "1.3.5" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-ZKljdYb7BE8mImdCve/XMzzRauNya+d1RvIktzkXAIdZYlPaDYk9P6360AlyV6NcvAFi9ynNVyDn13Vo6XY0xA=="],
+    "@jill64/npm-demo-layout": ["@jill64/npm-demo-layout@2.0.17", "", { "dependencies": { "@jill64/svelte-dark-theme": "5.1.4", "@jill64/svelte-menu": "2.0.1", "@jill64/svelte-ogp": "2.0.2", "@jill64/svelte-sanitize": "2.1.2", "@jill64/svelte-toast": "2.1.6", "svelte-code-copy": "2.2.0", "svelte-highlight": "7.8.2", "svelte-highlight-switcher": "1.3.5" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-FLNvcuLyExE3rTnhPbtSQhhs0ynda/af0LKfO5zwURyuDgoXqskdVcfkNeDhmeE4JNrNSDDb2E71/ILEJ1i5AQ=="],
 
     "@jill64/playwright-config": ["@jill64/playwright-config@3.0.0", "", { "peerDependencies": { "@playwright/test": "^1.51.0" } }, "sha512-7CdEIRKGZQjBPHmmYbPqDBn1X9Q8gEsI6qC9nfCF4iv55iLWrTdKkz9W7RayXCDCb3GuuR2W90OnQ106J7PiDg=="],
 
@@ -718,8 +718,6 @@
 
     "@humanfs/node/@humanwhocodes/retry": ["@humanwhocodes/retry@0.3.1", "", {}, "sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA=="],
 
-    "@jill64/npm-demo-layout/@jill64/svelte-dark-theme": ["@jill64/svelte-dark-theme@5.1.3", "", { "dependencies": { "@jill64/svelte-device-theme": "2.0.1", "@jill64/svelte-html": "2.0.0", "@jill64/svelte-storage": "2.0.0", "svelte-baked-cookie": "2.0.2", "svelte-feather-icons": "4.2.0", "typescanner": "0.5.3" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-6BXZM5IgHnirymqOT8igyP8dwS3GJl84Xn1+LkKJHga3RaWYGxqP4UIlpTs6l8N/nCHD6hF6oa55HIt3XJtmIg=="],
-
     "@jill64/svelte-toast/svelte-french-toast": ["svelte-french-toast@1.2.0", "", { "dependencies": { "svelte-writable-derived": "^3.1.0" }, "peerDependencies": { "svelte": "^3.57.0 || ^4.0.0" } }, "sha512-5PW+6RFX3xQPbR44CngYAP1Sd9oCq9P2FOox4FZffzJuZI2mHOB7q5gJBVnOiLF5y3moVGZ7u2bYt7+yPAgcEQ=="],
 
     "@jill64/typed-storage/ts-serde": ["ts-serde@1.0.8", "", { "dependencies": { "devalue": "5.1.1" } }, "sha512-YUBuQDm5uIpCIklGrU0by8uf4ZLBkIO1/mf7Gha83qn2iz54p/pmlXQanTaQZBSWB0EiJKQUo/ur72XvQpStAQ=="],
@@ -747,8 +745,6 @@
     "wrangler/esbuild": ["esbuild@0.17.19", "", { "optionalDependencies": { "@esbuild/android-arm": "0.17.19", "@esbuild/android-arm64": "0.17.19", "@esbuild/android-x64": "0.17.19", "@esbuild/darwin-arm64": "0.17.19", "@esbuild/darwin-x64": "0.17.19", "@esbuild/freebsd-arm64": "0.17.19", "@esbuild/freebsd-x64": "0.17.19", "@esbuild/linux-arm": "0.17.19", "@esbuild/linux-arm64": "0.17.19", "@esbuild/linux-ia32": "0.17.19", "@esbuild/linux-loong64": "0.17.19", "@esbuild/linux-mips64el": "0.17.19", "@esbuild/linux-ppc64": "0.17.19", "@esbuild/linux-riscv64": "0.17.19", "@esbuild/linux-s390x": "0.17.19", "@esbuild/linux-x64": "0.17.19", "@esbuild/netbsd-x64": "0.17.19", "@esbuild/openbsd-x64": "0.17.19", "@esbuild/sunos-x64": "0.17.19", "@esbuild/win32-arm64": "0.17.19", "@esbuild/win32-ia32": "0.17.19", "@esbuild/win32-x64": "0.17.19" }, "bin": { "esbuild": "bin/esbuild" } }, "sha512-XQ0jAPFkK/u3LcVRcvVHQcTIqD6E2H1fvZMA5dQPSOWb3suUbWbfbRf94pjc0bNzRYLfIrDRQXr7X+LHIm5oHw=="],
 
     "youch/cookie": ["cookie@0.5.0", "", {}, "sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw=="],
-
-    "@jill64/npm-demo-layout/@jill64/svelte-dark-theme/svelte-baked-cookie": ["svelte-baked-cookie@2.0.2", "", { "dependencies": { "@jill64/transform": "1.0.4", "@types/cookie": "1.0.0", "cookie": "1.0.2", "ts-serde": "1.0.8" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^4.0.0 || ^5.0.0" } }, "sha512-fPXKrSq5ScDq7hnibAHEzsYG7rAtZ8KqNLZn65yb9WEuE4hGVTz8SuZHhxk888ZxX5Jovj+SLKBkYyd/KcIRow=="],
 
     "@typescript-eslint/typescript-estree/minimatch/brace-expansion": ["brace-expansion@2.0.1", "", { "dependencies": { "balanced-match": "^1.0.0" } }, "sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA=="],
 
@@ -845,11 +841,5 @@
     "wrangler/esbuild/@esbuild/win32-ia32": ["@esbuild/win32-ia32@0.17.19", "", { "os": "win32", "cpu": "ia32" }, "sha512-eggDKanJszUtCdlVs0RB+h35wNlb5v4TWEkq4vZcmVt5u/HiDZrTXe2bWFQUez3RgNHwx/x4sk5++4NSSicKkw=="],
 
     "wrangler/esbuild/@esbuild/win32-x64": ["@esbuild/win32-x64@0.17.19", "", { "os": "win32", "cpu": "x64" }, "sha512-lAhycmKnVOuRYNtRtatQR1LPQf2oYCkRGkSFnseDAKPl8lu5SOsK/e1sXe5a0Pc5kHIHe6P2I/ilntNv2xf3cA=="],
-
-    "@jill64/npm-demo-layout/@jill64/svelte-dark-theme/svelte-baked-cookie/@types/cookie": ["@types/cookie@1.0.0", "", { "dependencies": { "cookie": "*" } }, "sha512-mGFXbkDQJ6kAXByHS7QAggRXgols0mAdP4MuXgloGY1tXokvzaFFM4SMqWvf7AH0oafI7zlFJwoGWzmhDqTZ9w=="],
-
-    "@jill64/npm-demo-layout/@jill64/svelte-dark-theme/svelte-baked-cookie/cookie": ["cookie@1.0.2", "", {}, "sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA=="],
-
-    "@jill64/npm-demo-layout/@jill64/svelte-dark-theme/svelte-baked-cookie/ts-serde": ["ts-serde@1.0.8", "", { "dependencies": { "devalue": "5.1.1" } }, "sha512-YUBuQDm5uIpCIklGrU0by8uf4ZLBkIO1/mf7Gha83qn2iz54p/pmlXQanTaQZBSWB0EiJKQUo/ur72XvQpStAQ=="],
   }
 }
