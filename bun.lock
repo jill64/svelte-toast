@@ -20,7 +20,7 @@
         "@sveltejs/kit": "2.19.2",
         "@sveltejs/vite-plugin-svelte": "5.0.3",
         "svelte": "5.23.1",
-        "ts-pattern": "5.6.2",
+        "ts-pattern": "5.7.0",
         "typescript": "5.8.2",
         "vite": "6.2.3",
       },
@@ -662,7 +662,7 @@
 
     "ts-api-utils": ["ts-api-utils@2.0.1", "", { "peerDependencies": { "typescript": ">=4.8.4" } }, "sha512-dnlgjFSVetynI8nzgJ+qF62efpglpWRk8isUEWZGWlJYySCTD6aKvbUDu+zbPeDakk3bg5H4XpitHukgfL1m9w=="],
 
-    "ts-pattern": ["ts-pattern@5.6.2", "", {}, "sha512-d4IxJUXROL5NCa3amvMg6VQW2HVtZYmUTPfvVtO7zJWGYLJ+mry9v2OmYm+z67aniQoQ8/yFNadiEwtNS9qQiw=="],
+    "ts-pattern": ["ts-pattern@5.7.0", "", {}, "sha512-0/FvIG4g3kNkYgbNwBBW5pZBkfpeYQnH+2AA3xmjkCAit/DSDPKmgwC3fKof4oYUq6gupClVOJlFl+939VRBMg=="],
 
     "ts-serde": ["ts-serde@1.0.9", "", { "dependencies": { "devalue": "5.1.1" } }, "sha512-l+xiCagguJE7K1EUFJNif/3mT8aCxVnmkx6oubVq/ToAE95RH9VC/5yw8rHRQ6xJLlI6y3Fr/f/kdd6hwwVB/A=="],
 
