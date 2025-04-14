@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-toast",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "🍞 Pre-Themed Responsive Toast Notification",
   "type": "module",
   "main": "dist/index.js",
