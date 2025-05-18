@@ -63,7 +63,7 @@
     "@sveltejs/adapter-cloudflare": "7.0.3",
     "svelte": "5.23.1",
     "@sveltejs/kit": "2.20.6",
-    "ts-pattern": "5.7.0",
+    "ts-pattern": "5.7.1",
     "typescript": "5.8.3",
     "vite": "6.3.5",
     "@sveltejs/vite-plugin-svelte": "5.0.3"
