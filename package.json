@@ -35,7 +35,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-toast.git",
-    "image": "https://opengraph.githubassets.com/0c6f7d7aba5d20abadbb0c9508f90abf0a1d55897624e82ceb59a29f252ae514/jill64/svelte-toast"
+    "image": "https://opengraph.githubassets.com/c8866a394bb7eadb99cff9ee4b028f9f5259503f76a83231055ded7707a6ef45/jill64/svelte-toast"
   },
   "scripts": {
     "dev": "vite dev",
@@ -66,7 +66,7 @@
     "ts-pattern": "5.7.1",
     "typescript": "5.8.3",
     "vite": "6.3.5",
-    "@sveltejs/vite-plugin-svelte": "5.0.3"
+    "@sveltejs/vite-plugin-svelte": "5.1.0"
   },
   "dependencies": {
     "@jill64/svelte-device-theme": "2.0.1",
